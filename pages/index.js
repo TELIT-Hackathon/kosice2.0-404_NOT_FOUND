@@ -21,8 +21,6 @@ function MyComponent() {
         const response = await fetch('http://localhost:3500/markers');
         const data = await response.json();
 
-        console.log(data);
-
         return data;
     };
 
