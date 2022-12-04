@@ -53,3 +53,7 @@ body, html {
     max-height: 100vh;
     overflow-y: hidden;
 }
+
+#__next {
+    height: 100%;
+}
