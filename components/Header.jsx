@@ -1,6 +1,8 @@
-import {useAuth} from "../Firebase";
+import {useAuth, handleLogout} from "../Firebase";
 import Voucher from "../components/Voucher.jsx"
 import Link from "next/link";
+import {useRouter} from "next/router";
+import {useEffect} from "react";
 
 const Header = () => {
 
@@ -9,6 +11,8 @@ const Header = () => {
 
     const userName = user?.displayName
     const userLogo = user?.photoURL
+
+    const router = useRouter()
 
     return(
 <>
@@ -23,9 +27,14 @@ const Header = () => {
                 </div>
             </Link>
 
+            <div className="balance-wrapper">
+                <button onClick={() => {
+                    handleLogout().then(r => {
+                        router.push("/login")
+                    });
 
-
-                <div className="balance-wrapper">
+                }
+                }>Log Out</button>
                 <p className="balance">0</p>
             </div>
 
@@ -33,8 +42,6 @@ const Header = () => {
             <div className="header-gradient">
 
             </div>
-
-
         </div>
 
 </>

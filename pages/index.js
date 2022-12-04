@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { MarkerF } from "@react-google-maps/api";
 import BottomItem from "../components/BottomItem";
+import Header from "../components/Header";
 
 const containerStyle = {
   width: "100vw",
@@ -36,6 +37,7 @@ function MyComponent() {
 
   return (
     <div>
+        <Header />
       <LoadScript
         googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
       >

@@ -23,21 +23,26 @@ const vouchers = () => {
     }, []);
 
     return(
-        <div className="voucher-page">
-            <Link href="/">
-                <a></a>
-                <div className="back-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
-                    </svg>
+        <>
+            <Header />
+            <div className="voucher-page">
 
-                </div>
-            </Link>
+                <Link href="/">
+                    <a></a>
+                    <div className="back-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                        </svg>
 
-            {vouchers.map((voucher) => {
-                return <Voucher voucher={voucher}/>
-            })}
-        </div>
+                    </div>
+                </Link>
+
+                {vouchers.map((voucher) => {
+                    return <Voucher voucher={voucher}/>
+                })}
+            </div>
+        </>
+
     )
 }
 

@@ -1,0 +1,43 @@
+.login-container {
+    width: 100vw;
+    height: 100vh;
+    background: url("../public/background.svg") no-repeat left/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.login-container p {
+    color: #b0b0b0;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-form input {
+    text-align: center;
+    border: 1px solid #2EBFA5;
+    border-radius: 10px;
+    height: 3rem;
+    box-shadow: 2px 4px 6px #cecece;
+
+}
+
+.login-form button {
+    background: #2EBFA5;
+    border-radius: 10px;
+    width: 60%;
+    height: 3rem;
+    box-shadow: 2px 4px 6px #6fc0b3;
+}
+
+.social-login {
+    display: flex;
+    gap: 1rem;
+}
