@@ -177,7 +177,7 @@ function MyComponent() {
                 <img
                   src={selectedMarker?.user?.photo}
                   alt=""
-                  className="w-14 h-14 rounded-full"
+                  className="w-14 h-14 rounded-full ml-4"
                 />
               </div>
             </li>
