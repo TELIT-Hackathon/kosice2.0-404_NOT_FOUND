@@ -9,7 +9,7 @@ const Header = () => {
     const userLogo = user?.photoURL
 
     return(
-
+<>
 
 
         <div className="header">
@@ -23,8 +23,12 @@ const Header = () => {
                 <p className="balance">0</p>
 
             </div>
+            <div className="header-gradient">
 
+            </div>
         </div>
+
+</>
     )
 }
 
