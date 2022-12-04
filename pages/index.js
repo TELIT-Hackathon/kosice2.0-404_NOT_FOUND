@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { GoogleMap, LoadScript, useJsApiLoader } from '@react-google-maps/api';
+import { GoogleMap, LoadScript } from '@react-google-maps/api';
 import { MarkerF } from '@react-google-maps/api';
 import BottomItem from '../components/BottomItem';
-import {log} from "util";
 
 const containerStyle = {
     width: '100vw',
     height: '100vh',
 };
+
+const serverUrl = "https://json-server-nine-beige.vercel.app/api/markers";
 
 
 function MyComponent() {
@@ -21,7 +22,7 @@ function MyComponent() {
     const [modalOpen, setModalOpen] = useState(false);
 
     const fetchMarkers = async () => {
-        const response = await fetch('http://localhost:3500/markers');
+        const response = await fetch(serverUrl);
         const data = await response.json();
 
         console.log(data)
