@@ -22,7 +22,8 @@
     border-radius: 50%;
 }
 
-body {
+body, html {
     height: 100vh;
+    max-height: 100vh;
     overflow-y: hidden;
 }
