@@ -4,13 +4,23 @@
       "id": "2",
       "lat": "48.701515",
       "lon": "21.233395",
-      "user_photo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.dreamstime.com%2Fphotos-images%2Fperson-face.html&psig=AOvVaw36aGwVGFtP8RYmSPUFSTBA&ust=1670191913819000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCv6PC73vsCFQAAAAAdAAAAABAI"
+      "user": {
+        "id": "1",
+        "name": "Filip Katusin",
+        "photo": "https://thumbs.dreamstime.com/z/very-old-woman-face-10578268.jpg",
+        "distance": "65 meters away"
+      }
     },
     {
       "id": "3",
       "lat": "48.791515",
       "lon": "21.293395",
-      "user_photo": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphoto%2Freal-man-face-gm526372013-52722234&psig=AOvVaw36aGwVGFtP8RYmSPUFSTBA&ust=1670191913819000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPCv6PC73vsCFQAAAAAdAAAAABAN"
+      "user": {
+        "id": "2",
+        "name": "Vlado Krivy",
+        "photo": "https://thumbs.dreamstime.com/z/man-wearing-face-mask-19004588.jpg",
+        "distance": "108 meters away"
+      }
     }
   ]
 }
