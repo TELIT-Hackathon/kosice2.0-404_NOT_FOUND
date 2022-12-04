@@ -9,6 +9,26 @@
         "name": "Filip Katusin",
         "photo": "https://thumbs.dreamstime.com/z/very-old-woman-face-10578268.jpg",
         "distance": "65 meters away"
+      },
+      "duration": "13min",
+      "distance": "6,5km",
+      "co2": "802,1 g",
+      "schedule": {
+        "mon": "6:00 - 6:15",
+        "thu": "6:00 - 6:15",
+        "wed": null,
+        "thur": "6:00 - 6:15",
+        "fri": "6:00 - 6:15",
+        "sat": null,
+        "sun": null
+      },
+      "data": {
+        "driver": {
+          "name": "Marek Certovsky",
+          "email": "marek.certovsky@gmail.com",
+          "rating": "4"
+        }
+
       }
     },
     {
@@ -22,5 +42,14 @@
         "distance": "108 meters away"
       }
     }
+  ],
+  "vouchers": [
+    {
+      "name": "FREE PARKING",
+      "value": "2 HOURS",
+      "image": "https://media.discordapp.net/attachments/1029454636597399683/1048769750420959282/CSC-Logo-Schrift-wei-gruen-2022-1-400x116.png",
+      "backgroundColor": ""
+    }
   ]
+
 }

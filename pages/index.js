@@ -8,7 +8,7 @@ const containerStyle = {
   height: "80vh",
 };
 
-const serverUrl = "https://json-server-nine-beige.vercel.app/api";
+const serverUrl = "http://localhost:3500";
 
 function MyComponent() {
   const [markers, setMarkers] = useState([]);
@@ -50,7 +50,7 @@ function MyComponent() {
             fullscreenControl: false,
             gestureHandling: "greedy",
           }}
-          onClick={(event) => console.log(event.latLng)}
+          onClick={(event) => console.log(event.latLng.lat())}
         >
           {markers?.map((item, index) => {
             return (

@@ -124,3 +124,19 @@ body, html {
 #__next {
     height: 100%;
 }
+
+#map {
+    height: 50vh;
+}
+
+.radio {
+    display: none;
+}
+
+.radio:checked > label {
+    background: red;
+}
+
+.chakra-tabs__tab[aria-selected = "true"] {
+    background: red;
+}
