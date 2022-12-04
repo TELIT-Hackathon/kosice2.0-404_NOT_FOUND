@@ -44,10 +44,11 @@ function MyComponent() {
                     center={center}
                     zoom={zoom}
                     options={{
-                        // zoomControl: false,
-                        // streetViewControl: false,
-                        // mapTypeControl: false,
-                        // fullscreenControl: false,
+                        zoomControl: false,
+                        streetViewControl: false,
+                        mapTypeControl: false,
+                        fullscreenControl: false,
+                        gestureHandling: "greedy"
                     }}
                 >
                     {markers?.map((item, index) => {
