@@ -9,7 +9,7 @@ const Login = () => {
 
   return (
     <div>
-      <p>curretn user email: {user?.email}</p>
+      <p>current user email: {user?.email}</p>
 
       {!!user ? (
         <button onClick={() => handleLogout()}>logout</button>

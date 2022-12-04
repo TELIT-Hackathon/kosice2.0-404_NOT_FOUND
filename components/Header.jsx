@@ -1,4 +1,6 @@
 import {useAuth} from "../Firebase";
+import Voucher from "../components/Voucher.jsx"
+import Link from "next/link";
 
 const Header = () => {
 
@@ -13,19 +15,26 @@ const Header = () => {
 
 
         <div className="header">
-            <div className="header-user">
-                <img alt="user-logo" className="user-logo" src={userLogo}></img>
-                <h3>{userName}</h3>
-            </div>
+            <Link href="/vouchers">
+                <a></a>
+                <div className="header-user">
+                    <img alt="user-logo" className="user-logo" src={userLogo}></img>
+                    <h3>{userName}</h3>
+                </div>
+            </Link>
 
-            <div className="balance-wrapper">
 
+
+                <div className="balance-wrapper">
                 <p className="balance">0</p>
-
             </div>
+
+
             <div className="header-gradient">
 
             </div>
+
+
         </div>
 
 </>

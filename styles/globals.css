@@ -20,7 +20,7 @@
 
 .header-gradient {
     width: 100vw;
-    height: 40px;
+    height: 60px;
     background: white;
     background: linear-gradient(180deg, #fafafa 0%, #fafafa00 100%);
     position: absolute;
@@ -34,8 +34,12 @@
     border-radius: 50%;
 }
 
-.balance-wrapper {
-
+.back-arrow {
+    top: 13%;
+    color: black;
+    font-size: 4rem;
+    z-index: 10000;
+    position: absolute;
 }
 
 .balance::after {
@@ -46,6 +50,69 @@
     background: #4E4187;
     border-radius: 50%;
     width: 20px;
+    margin-left: 0.2rem;
+}
+
+.voucher-page {
+    margin-top: 2rem;
+    text-align: right;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow: scroll;
+    height: calc(100vh - 5rem);
+    color: white;
+}
+
+.voucher-wrapper:first-of-type {
+    margin-top: 2rem;
+}
+
+.voucher-wrapper {
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #6a6a6a;
+    padding-bottom: 0.5rem;
+}
+
+.voucher-upper {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.voucher-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 8rem;
+}
+
+.voucher-info .name {
+    font-size: 0.7rem;
+}
+
+.image-wrapper {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    min-width: 12rem;
+}
+
+.company-img {
+    object-fit: contain;
+    width: 12rem;
+    height: 4rem;
+    margin: 0.5rem;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.balance {
+    margin-right: 0.5rem;
 }
 
 body, html {
