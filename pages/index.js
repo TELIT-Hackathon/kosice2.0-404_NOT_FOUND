@@ -36,34 +36,34 @@ function MyComponent() {
 
     return (
         <div>
-            <LoadScript
-                googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
-            >
-                <GoogleMap
-                    mapContainerStyle={containerStyle}
-                    center={center}
-                    zoom={zoom}
-                    options={{
-                        zoomControl: false,
-                        streetViewControl: false,
-                        mapTypeControl: false,
-                        fullscreenControl: false,
-                        gestureHandling: "greedy"
-                    }}
-                >
-                    {markers?.map((item, index) => {
-                        return (
-                            <MarkerF
-                                key={index}
-                                position={{
-                                    lat: parseFloat(item.lat),
-                                    lng: parseFloat(item.lon),
-                                }}
-                            />
-                        );
-                    })}
-                </GoogleMap>
-            </LoadScript>
+            {/*<LoadScript*/}
+            {/*    googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}*/}
+            {/*>*/}
+            {/*    <GoogleMap*/}
+            {/*        mapContainerStyle={containerStyle}*/}
+            {/*        center={center}*/}
+            {/*        zoom={zoom}*/}
+            {/*        options={{*/}
+            {/*            zoomControl: false,*/}
+            {/*            streetViewControl: false,*/}
+            {/*            mapTypeControl: false,*/}
+            {/*            fullscreenControl: false,*/}
+            {/*            gestureHandling: "greedy"*/}
+            {/*        }}*/}
+            {/*    >*/}
+            {/*        {markers?.map((item, index) => {*/}
+            {/*            return (*/}
+            {/*                <MarkerF*/}
+            {/*                    key={index}*/}
+            {/*                    position={{*/}
+            {/*                        lat: parseFloat(item.lat),*/}
+            {/*                        lng: parseFloat(item.lon),*/}
+            {/*                    }}*/}
+            {/*                />*/}
+            {/*            );*/}
+            {/*        })}*/}
+            {/*    </GoogleMap>*/}
+            {/*</LoadScript>*/}
 
             <div className='absolute bottom-0 left-0 w-full bg-white p-3 pt-6 rounded-t-2xl group'>
                 <div className='flex flex-col items-center space-y-2'>
