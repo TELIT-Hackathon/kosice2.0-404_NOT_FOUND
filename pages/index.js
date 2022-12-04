@@ -5,7 +5,7 @@ import BottomItem from '../components/BottomItem';
 
 const containerStyle = {
     width: '100vw',
-    height: '100vh',
+    height: '80vh',
 };
 
 const serverUrl = "https://json-server-nine-beige.vercel.app/api/markers";
