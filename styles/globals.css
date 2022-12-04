@@ -22,6 +22,20 @@
     border-radius: 50%;
 }
 
+.balance-wrapper {
+
+}
+
+.balance::after {
+    display: inline-block;
+    text-align: center;
+    color: white;
+    content:"S";
+    background: #4E4187;
+    border-radius: 50%;
+    width: 20px;
+}
+
 body, html {
     height: 100vh;
     max-height: 100vh;
