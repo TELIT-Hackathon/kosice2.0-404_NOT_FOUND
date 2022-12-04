@@ -2,7 +2,7 @@ import {
   handleLogout,
   signInWithGoogle,
   useAuth,
-} from '../../../../Desktop/hackaton/my-app/Firebase';
+} from '../Firebase';
 
 const Login = () => {
   const user = useAuth();
