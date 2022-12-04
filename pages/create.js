@@ -79,7 +79,7 @@ const CreatePage = () => {
     })
       .then(function (res) {
         console.log(res);
-        router.push("/");
+        router.push("/home");
       })
       .catch(function (res) {
         console.log(res);

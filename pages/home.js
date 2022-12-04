@@ -3,6 +3,9 @@ import { GoogleMap, LoadScript } from "@react-google-maps/api";
 import { MarkerF } from "@react-google-maps/api";
 import BottomItem from "../components/BottomItem";
 import Header from "../components/Header";
+import { useRouter } from "next/router";
+import { Fab } from "@mui/material";
+import Link from "next/link";
 
 const containerStyle = {
   width: "100vw",
@@ -37,7 +40,7 @@ function MyComponent() {
 
   return (
     <div>
-        <Header />
+      <Header />
       <LoadScript
         googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}
       >
@@ -70,12 +73,13 @@ function MyComponent() {
       </LoadScript>
 
       {!selectedMarker ? (
-        <div className="fixed bottom-0 left-0 w-full bg-white p-3 pt-6 rounded-t-2xl group">
+        <div className="fixed bottom-0 left-0 w-full bg-white p-3 pt-3 rounded-t-2xl group">
           <div className="flex flex-col items-center space-y-2">
             <div
-              className="text-center space-y-3"
+              className="text-center flex flex-col items-center space-y-3 cursor-pointer group"
               onClick={() => setModalOpen((prev) => !prev)}
             >
+              <div className="h-1 w-24 bg-gray-200 rounded-full mb-2 group-hover:w-32 transition-all"></div>
               <h2 className="font-semibold text-2xl">Pick your ride</h2>
               <p className="text-gray-400 pb-4">
                 Select desired driver from the list below
@@ -108,27 +112,15 @@ function MyComponent() {
             </ul>
           </div>
 
-          <div className="flex justify-between items-center  pt-4">
-            <div className="space-x-6 rounded-xl bg-green p-2">
+          <div className="flex justify-end items-center  pt-4">
+            <Link href="/create">
               <button
                 onClick={() => setRole("passenger")}
-                className={`text-lg font-bold px-2 py-1 rounded-md transition-all ${
-                  role === "passenger" ? "bg-white text-green" : "text-white"
-                }`}
+                className={`text-xl font-bold px-4 py-2 rounded-md transition-all bg-green text-white hover:scale-105 transition`}
               >
-                Passenger
+                + Passenger
               </button>
-              <button
-                onClick={() => setRole("driver")}
-                className={`text-lg font-bold px-3 py-1 rounded-md transition-all ${
-                  role === "driver" ? "bg-white text-green" : "text-white"
-                }`}
-              >
-                Driver
-              </button>
-            </div>
-
-            <div>image</div>
+            </Link>
           </div>
         </div>
       ) : (
